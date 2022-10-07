@@ -1,0 +1,32 @@
+
+body {
+  color: var(--prmary-text-color);
+  font-family: Roboto, Verdana,
+            sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+ 
+// для page-portfolio
+.section {
+  padding: 94px 0;
+}
+
+.logo {
+  display: block;
+  padding: 24px 0;
+  color: var(--accent-color);
+  font-family: Raleway, Verdana,
+        sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  }
+    
+   

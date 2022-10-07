@@ -1,0 +1,42 @@
+/* Секція Постійні кліенти сlients */
+
+.сlients {
+  padding: 94px 0;
+  margin: 0 auto;
+  }
+  
+.сlients__title {
+  @extend %title;
+  }
+  
+  .сlients__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .сlients__item:not(:last-child) {
+  margin-right: 30px;
+  }
+  
+  .сlients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--borders);
+  fill: currentColor;
+  transition: border-color 250ms var(--timing-function), 
+  fill 250ms var(--timing-function);
+    &:focus,
+    &:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+  
+  
+  

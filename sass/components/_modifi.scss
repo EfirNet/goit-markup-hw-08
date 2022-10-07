@@ -1,0 +1,14 @@
+/* Модифікатори Modifiers */
+
+.subscribe__label--hidden,
+.feature__title--hidden,
+.form__privacy-input--hidden {
+  @extend %hidden;
+}
+
+
+ .address__link--change-color {
+  color: var(--white-color);
+  } 
+
+

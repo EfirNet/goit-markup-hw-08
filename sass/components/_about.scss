@@ -1,0 +1,33 @@
+/* Секція Чим ми займаємося about */
+
+.about {
+  padding: 94px 0;
+  }
+ 
+.about__title{
+  @extend %title;
+  }
+
+  .about__list {
+  display: flex;
+  }
+  
+  .about__item {
+    position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  
+ 
+  .about__subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background-color: var(--gradient-about);
+    color: var(--white-color);
+    text-align: center;
+    padding: 27px 0;
+  }
