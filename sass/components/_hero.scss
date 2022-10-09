@@ -1,33 +1,40 @@
-/* Секція герой hero */
 
-.hero {
-  max-width: 1600px;
-  min-height: 600px;
-  padding: 200px 0;
-  margin: 0 auto;
-  background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image.jpg);
-  background-color: var(--bg-footer-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  .hero { 
+    @media screen and (min-width: $tablet) {
+    max-width: 768px;
   }
-  
-  .hero__wrap {
-  width: 696px;
-  margin: 0 auto;
+    @media screen and (min-width: $desktop) { 
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
   }
-  
+    max-width: 480px;
+    height: 400px;
+    padding: 118px 0;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image.jpg);
+    background-color: var(--bg-footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   
   .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
+    @media screen and (min-width: $desktop) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
   }
-  
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+    
   .hero__button {
-  @extend %button;
-  margin: 30px auto 0 auto;
+    @extend %button;
+    margin: 30px auto 0 auto;
   }

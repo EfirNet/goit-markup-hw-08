@@ -33,4 +33,11 @@
     --border-form: rgba(33, 33, 33, 0.2);
 
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+    // --desktop: 1200px;
+    // --tablet: 768px;
+    // --mobile: 480px;
+} 
+    $desktop: "1200px";
+    $tablet: "768px";
+    $mobile: "480px";

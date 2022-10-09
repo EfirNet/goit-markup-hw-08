@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta content='true' name='HandheldFriendly'>
+    <meta content='width' name='MobileOptimized'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
     <title>Студия</title>
    <link rel="stylesheet" href="./css/main.min.css">
 
@@ -18,7 +21,7 @@
 
         <!-- Логотип компанії Logo -->
 
-        <div class="header__wrap">
+        <!-- <div class="header__wrap"> -->
           <a class="header__logo logo" href="./index.html"
             >Web<span class="header__decor">Studio</span></a>
 
@@ -35,7 +38,7 @@
               <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
-        </div>
+        <!-- </div> -->
 
         <!-- Contacts -->
 
@@ -51,13 +54,21 @@
             </li>
             <li class="contacts__item">
               <a href="tel:+380961111111" class="contacts__link"
-                ><svg class="contacts__icon" width="10" height="16">
+                ><svg class="contacts__icon-tablet" width="10" height="14">
+                  <use href="./images/icons.svg#icon-tablet"></use></svg
+                >
+                <svg class="contacts__icon-smartphone" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
         </div>
+        <div class="menu-mobile">
+          <a href="#" class="menu-mobile__link"
+          ><svg class="menu-mobile__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-mob"></use></svg
+          ></a></div>
 
       </div>
     </header>
@@ -68,16 +79,16 @@
 
       <section class="hero">
         <div class="hero__wrap">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">Ефективні рішення для<br>вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
 
-      <!-- Секція Особливості feature-->
+      <!--  Секція Особливості feature  -->
 
-      <section class="feature">
+        <section class="feature"> 
         <div class="container">
           <h2 class="feature__title feature__title--hidden">Особливості</h2>
           <ul class="feature__list">
@@ -159,7 +170,7 @@
       </section>
 
       <!-- Секція Наша команда team -->
-
+<!-- 
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -260,7 +271,7 @@
          
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Постійні кліенти сlients -->
 
@@ -319,7 +330,7 @@
       
         <!-- Логотип та контактна інформація logo address -->
         <!-- Логотип компанії logo -->
-
+        <div class="footer__wrap-tablet">
         <div class="footer__wrap">
           <a class="footer__logo logo" href="./index.html"
             >Web<span class="footer__decor">Studio</span></a
@@ -385,6 +396,7 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <!-- Підписка - Підпишіться на розсилку subscribe -->
 

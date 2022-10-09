@@ -1,31 +1,50 @@
-/* Секція Особливості feature */
+
 
 .feature {
+  padding-top: 30px;
+  @media screen and (min-width: $tablet) {
+  padding-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
   padding-top: 94px;
+  }
+}
+
+.feature__item {
+  padding-top: 30px;
+  @media screen and (min-width: $tablet) {
+  flex-basis: calc((100% - 30px) / 2);
+  padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .feature__list {
+  @media (min-width: $desktop), (min-width: $tablet)  {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.feature__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+  flex-wrap: nowrap;
+  }
 }
 
 .feature__card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bg-our-color);
   border-radius: 4px;
 }
 
-.feature__subtitle{
+.feature__subtitle {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -33,6 +52,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+  @media (min-width: $desktop), (min-width: $tablet) { 
+    text-align: left;
+}
 }
   
 .feature__description {
@@ -40,3 +63,55 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// .feature {
+//   padding-top: 94px;
+// }
+
+// .feature__list {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: center;
+// }
+
+// .feature__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+// .feature__card {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background-color: var(--bg-our-color);
+//   border-radius: 4px;
+// }
+
+// .feature__subtitle{
+//   margin-bottom: 10px;
+//   color: var(--title-text-color);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+  
+// .feature__description {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+// }

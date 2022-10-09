@@ -1,16 +1,24 @@
-/* Шапка сайту Header */
 
 .header {
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
   border-bottom: 1px solid var(--border-bottom);
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+  }
   }
   
   .header-container {
-  display: flex;
-  }
-  
-  /* Логотип компанії Logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+ 
+
   
   .header__decor {
   color: var(--black-color);
@@ -21,10 +29,19 @@
     align-items: center;
     }
   
-  /* Меню NAV */
+
+  
   
   .nav {
-  margin-left: 93px;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-left: 93px;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-left: 88px;
+    }
   }
   
   .nav__list {
@@ -78,17 +95,23 @@
         transform: scaleX(1);
       }
   }
-    
+
   
   /* Контакти link */
   
   .contacts {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   margin: auto 0 auto auto;
   }
   
   .contacts__link {
-  display: flex;
-  padding: 24px 0;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+   display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,14 +129,184 @@
   }
   
   .contacts__list {
-  display: flex; 
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
   }
   
+
   .contacts__item + .contacts__item {
   margin-left: 50px; 
+  @media screen and (max-width: 1199px) {
+    margin: 10px 0 0 0;
+  }
   }
   
   .contacts__icon {
   margin: auto 10px auto auto;
+ 
+  }
+
+  
+  .contacts__icon-tablet {
+   @media screen and (max-width: 1199px) { 
+    margin: auto 10px auto auto;
+    margin-left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+  .contacts__icon-smartphone {
+    margin: auto 10px auto auto;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   
+  .menu-mobile {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header {
+//   max-width: 1600px;
+//   margin: 0 auto;
+//   border-bottom: 1px solid var(--border-bottom);
+//   }
+  
+//   .header-container {
+//   display: none; 
+//   @media screen and (min-width: var(--tablet)) {
+//     display: flex;
+//   }
+//   @media screen and (min-width: var(--desktop)) {
+//     display: flex;
+//   }
+//   }
+ 
+//   /* Логотип компанії Logo */
+  
+//   .header__decor {
+//   color: var(--black-color);
+//   }
+  
+//   .header__wrap {
+//     display: flex;
+//     align-items: center;
+//     }
+  
+//   /* Меню NAV */
+  
+//   .nav {
+//   margin-left: 93px;
+//   }
+  
+//   .nav__list {
+//   display: flex;
+//   }
+  
+//   .nav__item + .nav__item {
+//   margin-left: 50px;
+//   }
+  
+//   .nav__link {
+//   position: relative;
+//   display: inline-block;
+//   padding: 32px 0 32px;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: var(--title-text-color);
+//   transition: color 250ms var(--timing-function);
+//     &:focus,
+//     &:hover {
+//       color: var(--accent-color);
+//       }
+//   }
+
+//   .nav__link {
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       bottom: -1px;
+//       right: 0;
+//       width: 100%;
+//       height: 4px;
+//       border-radius: 2px;
+//       background-color: var(--accent-color);
+//       transform: scaleX(0);
+//       transition: transform 250ms var(--timing-function);
+//    }
+//       &:hover::after,
+//       &:focus::after {
+//         transform: scaleX(1);
+//         }
+//      }
+
+
+
+//   .nav__link--current {
+//     color: var(--accent-color);
+//       &::after {
+//         transform: scaleX(1);
+//       }
+//   }
+    
+  
+//   /* Контакти link */
+  
+//   .contacts {
+//   margin: auto 0 auto auto;
+//   }
+  
+//   .contacts__link {
+//   display: flex;
+//   padding: 24px 0;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: var(--prmary-text-color);
+//   fill: currentColor;
+//   transition: color 250ms var(--timing-function), 
+//   fill 250ms var(--timing-function);
+//     &:focus,
+//     &:hover {
+//       color: var(--accent-color);
+//       fill: currentColor;
+//       }
+//   }
+  
+//   .contacts__list {
+//   display: flex; 
+//   }
+  
+//   .contacts__item + .contacts__item {
+//   margin-left: 50px; 
+//   }
+  
+//   .contacts__icon {
+//   margin: auto 10px auto auto;
+//   }
