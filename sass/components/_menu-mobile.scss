@@ -46,10 +46,11 @@
 
 // .mobile-wrap {
 //   position: absolute;
-//   top: 0;
-//   left: 0;
-//   max-width: 100%;
-//   min-height: 100%;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 480px;
+//   max-height: 796px;
 //   padding: 48px 40px;
 //   background-color: var(--white-color);
 //   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -78,7 +79,7 @@ color: var(--title-text-color);
 }
 
 .mobile-contacts__list {
-  margin-top: 50px;
+  margin-top: 150px;
   // font-weight: 500;
   // line-height: 1.17;
   // letter-spacing: 0.02em;
