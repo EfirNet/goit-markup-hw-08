@@ -1,12 +1,13 @@
 
 
 .feature {
-  padding-top: 30px;
+  padding: 60px 0;
   @media screen and (min-width: $tablet) {
   padding-top: 60px;
   }
   @media screen and (min-width: $desktop) {
   padding-top: 94px;
+  padding-bottom: 0;
   }
 }
 

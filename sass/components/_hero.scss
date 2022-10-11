@@ -1,30 +1,27 @@
 
   .hero { 
-    max-width: 100%;
-    height: 400px;
-    padding: 118px 0;
-    margin: 0 auto;
-    // background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile.jpg);
-    background-color: var(--bg-footer-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
 
-    @media screen and (min-width: 320px) {
-      // max-width: 480px;
-      height: 400px;
-      background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-   screen and (-webkit-min-device-pixel-ratio: 2),
-   screen and (min-resolution: 192dpi),
-   screen and (min-resolution: 2dppx) { 
-    background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile@2x.jpg);
-    } 
-    }
+   
 
-    @media screen and (min-width: 481px) {
+    
+    
+
+
+  @media screen and (max-width: 480px) {
+    // max-width: 480px;
+    // height: 400px;
+    background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+ screen and (-webkit-min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) { 
+  background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile@2x.jpg);
+  } 
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
     // max-width: 1200px;
-    height: 400px;
     background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-tablet.jpg);
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -34,7 +31,8 @@
      background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-tablet@2x.jpg);
   }
   }
-    @media screen and (min-width: 769px) { 
+
+  @media screen and (min-width: 1200px) { 
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -47,6 +45,18 @@
     background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-desktop@2x.jpg);
     }
     }  
+
+
+  max-width: 100%;
+    height: 400px;
+    padding: 118px 0;
+    margin: 0 auto;
+    // background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image-mobile.jpg);
+    background-color: var(--bg-footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     }
 
 
