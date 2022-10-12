@@ -1642,6 +1642,10 @@ body {
   fill: var(--accent-color);
 }
 
+.mobile-menu__link:focus, .mobile-menu__link:hover {
+  color: var(--accent-color);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;

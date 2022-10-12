@@ -24,6 +24,13 @@
 }
 }
 
+.mobile-menu__link { 
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
