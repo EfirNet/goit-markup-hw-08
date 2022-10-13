@@ -2,14 +2,15 @@
 .team {
   padding: 60px 0;
   background-color: var(--bg-our-color);
-  max-width: 480px;
+  // max-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
   
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
+    // max-width: 768px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 1600px;
+    // max-width: 1600px;
     padding: 94px 0;
   }
   }
