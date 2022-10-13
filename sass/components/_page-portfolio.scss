@@ -102,7 +102,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
        
     }
     @media screen and (min-width: $desktop) {
-        width: 370pxpx;
+        width: 370px;
     }   
     }
 
@@ -132,6 +132,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 
 .portfolio__wrap {
+    // width: 100%;
 height: 294px;
 position: relative;
 overflow: hidden;
