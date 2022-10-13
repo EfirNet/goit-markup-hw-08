@@ -1739,6 +1739,11 @@ body {
   font-size: 34px;
   color: var(--accent-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-contacts__link {
+    font-size: 30px;
+  }
+}
 
 .mobile-mail-contacts__link {
   font-size: 24px;
