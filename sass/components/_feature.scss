@@ -24,7 +24,7 @@
 }
 
 .feature__list {
-  @media (min-width: $desktop), (min-width: $tablet)  {
+  @media screen and (min-width: $tablet)  {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -54,7 +54,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  @media (min-width: $desktop), (min-width: $tablet) { 
+  @media screen and (min-width: $tablet) { 
     text-align: left;
 }
 }

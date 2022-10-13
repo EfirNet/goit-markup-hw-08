@@ -1,14 +1,14 @@
 
 
 .footer {
-  max-width: 480px;
+  // max-width: 480px;
   margin: 0 auto;
   background-color: var(--bg-footer-color);
   @media screen and (min-width: $tablet) {
-  max-width: 768px;
+  // max-width: 768px;
   }
   @media screen and (min-width: $desktop) {
-  max-width: 1600px;
+  // max-width: 1600px;
   }
  
  

@@ -24,14 +24,14 @@
   
   .backdrop__modal {
     @media screen and (min-width: $desktop) {
-      height: 581px;
-      width: 528px;
+      min-height: 581px;
+      max-width: 528px;
     }
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 609px;
-  width: 450px;
+  min-height: 609px;
+  max-width: 450px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
