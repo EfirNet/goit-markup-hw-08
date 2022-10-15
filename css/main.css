@@ -1422,7 +1422,6 @@ body {
           transform: translate(0, -10%);
 }
 
-/* Модифікатори Modifiers */
 .address__link--change-color {
   color: var(--white-color);
 }
