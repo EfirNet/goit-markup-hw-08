@@ -1,5 +1,8 @@
 {
     "recommendations": [],
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
 "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.formats": [
     {
